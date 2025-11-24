@@ -1,0 +1,504 @@
+@font-face {
+  font-family: 'icons_boliin';
+  src:  url('./icomoon.eot');
+  src:  url('./icomoon.eot#iefix') format('embedded-opentype'),
+    url('./icomoon.ttf') format('truetype'),
+    url('./icomoon.woff') format('woff'),
+    url('./icomoon.svg#icomoon') format('svg');
+}
+
+[class^="bicon-"], [class*=" bicon-"], [class*="bicon"] {
+  font-family: 'icons_boliin' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bicon-camera:before {
+  content: "\e99d";
+}
+.bicon-camera-1:before {
+  content: "\e99e";
+}
+.bicon-video-camera:before {
+  content: "\e99f";
+}
+.bicon-video-camera-1:before {
+  content: "\e9a0";
+}
+.bicon-selection:before {
+  content: "\e900";
+}
+.bicon-delete:before {
+  content: "\e901";
+}
+.bicon-magnifying-glass:before {
+  content: "\e902";
+}
+.bicon-heart:before {
+  content: "\e903";
+}
+.bicon-clipboard:before {
+  content: "\e904";
+}
+.bicon-quote:before {
+  content: "\e905";
+}
+.bicon-focus:before {
+  content: "\e906";
+}
+.bicon-left-arrow:before {
+  content: "\e907";
+}
+.bicon-right-arrow:before {
+  content: "\e908";
+}
+.bicon-left-arrow-1:before {
+  content: "\e909";
+}
+.bicon-right-arrow-1:before {
+  content: "\e90a";
+}
+.bicon-checked:before {
+  content: "\e90b";
+}
+.bicon-check:before {
+  content: "\e90c";
+}
+.bicon-comment:before {
+  content: "\e90d";
+}
+.bicon-message:before {
+  content: "\e90e";
+}
+.bicon-star:before {
+  content: "\e90f";
+}
+.bicon-phone:before {
+  content: "\e910";
+}
+.bicon-email:before {
+  content: "\e911";
+}
+.bicon-plus:before {
+  content: "\e912";
+}
+.bicon-phone-call:before {
+  content: "\e913";
+}
+.bicon-support:before {
+  content: "\e914";
+}
+.bicon-generous:before {
+  content: "\e915";
+}
+.bicon-fundraiser:before {
+  content: "\e916";
+}
+.bicon-message-1:before {
+  content: "\e917";
+}
+.bicon-shopping-cart:before {
+  content: "\e918";
+}
+.bicon-chat:before {
+  content: "\e919";
+}
+.bicon-address:before {
+  content: "\e91a";
+}
+.bicon-charity:before {
+  content: "\e91b";
+}
+.bicon-water:before {
+  content: "\e91c";
+}
+.bicon-health-check:before {
+  content: "\e91d";
+}
+.bicon-heart-1:before {
+  content: "\e91e";
+}
+.bicon-fast-food:before {
+  content: "\e91f";
+}
+.bicon-maternity:before {
+  content: "\e920";
+}
+.bicon-handshake:before {
+  content: "\e921";
+}
+.bicon-adoption:before {
+  content: "\e922";
+}
+.bicon-cashback:before {
+  content: "\e923";
+}
+.bicon-online-booking:before {
+  content: "\e924";
+}
+.bicon-travel:before {
+  content: "\e925";
+}
+.bicon-landscape:before {
+  content: "\e926";
+}
+.bicon-recovery:before {
+  content: "\e927";
+}
+.bicon-leadership:before {
+  content: "\e928";
+}
+.bicon-travel-1:before {
+  content: "\e929";
+}
+.bicon-car:before {
+  content: "\e92a";
+}
+.bicon-travel-2:before {
+  content: "\e92b";
+}
+.bicon-passport:before {
+  content: "\e92c";
+}
+.bicon-travel-3:before {
+  content: "\e92d";
+}
+.bicon-location:before {
+  content: "\e92e";
+}
+.bicon-worlwide:before {
+  content: "\e92f";
+}
+.bicon-travel-4:before {
+  content: "\e930";
+}
+.bicon-deer:before {
+  content: "\e931";
+}
+.bicon-paragliding:before {
+  content: "\e932";
+}
+.bicon-mountains:before {
+  content: "\e933";
+}
+.bicon-mountain:before {
+  content: "\e934";
+}
+.bicon-flag:before {
+  content: "\e935";
+}
+.bicon-hang-gliding:before {
+  content: "\e936";
+}
+.bicon-summer-holidays:before {
+  content: "\e937";
+}
+.bicon-summer:before {
+  content: "\e938";
+}
+.bicon-reisekarte:before {
+  content: "\e939";
+}
+.bicon-wegweiser:before {
+  content: "\e93a";
+}
+.bicon-lager:before {
+  content: "\e93b";
+}
+.bicon-calendar:before {
+  content: "\e93c";
+}
+.bicon-clock:before {
+  content: "\e93d";
+}
+.bicon-time:before {
+  content: "\e93e";
+}
+.bicon-wifi:before {
+  content: "\e93f";
+}
+.bicon-paw:before {
+  content: "\e940";
+}
+.bicon-parking-sign:before {
+  content: "\e941";
+}
+.bicon-elevator:before {
+  content: "\e942";
+}
+.bicon-global:before {
+  content: "\e943";
+}
+.bicon-global-1:before {
+  content: "\e944";
+}
+.bicon-coupon:before {
+  content: "\e945";
+}
+.bicon-suitcase:before {
+  content: "\e946";
+}
+.bicon-shopping-bags:before {
+  content: "\e947";
+}
+.bicon-food:before {
+  content: "\e948";
+}
+.bicon-plane:before {
+  content: "\e949";
+}
+.bicon-purse-with-bill:before {
+  content: "\e94a";
+}
+.bicon-credit-card:before {
+  content: "\e94b";
+}
+.bicon-multiple-users-silhouette:before {
+  content: "\e94c";
+}
+.bicon-player:before {
+  content: "\e94d";
+}
+.bicon-table:before {
+  content: "\e94e";
+}
+.bicon-reception:before {
+  content: "\e94f";
+}
+.bicon-cctv:before {
+  content: "\e950";
+}
+.bicon-wheelchair:before {
+  content: "\e951";
+}
+.bicon-towel:before {
+  content: "\e952";
+}
+.bicon-shampoo:before {
+  content: "\e953";
+}
+.bicon-hotel-sign:before {
+  content: "\e954";
+}
+.bicon-room-service:before {
+  content: "\e955";
+}
+.bicon-jacuzzi:before {
+  content: "\e956";
+}
+.bicon-single-bed:before {
+  content: "\e957";
+}
+.bicon-review:before {
+  content: "\e958";
+}
+.bicon-bathroom:before {
+  content: "\e959";
+}
+.bicon-room-key:before {
+  content: "\e95a";
+}
+.bicon-swimmer:before {
+  content: "\e95b";
+}
+.bicon-terrace:before {
+  content: "\e95c";
+}
+.bicon-receptionist:before {
+  content: "\e95d";
+}
+.bicon-laundry:before {
+  content: "\e95e";
+}
+.bicon-translate:before {
+  content: "\e95f";
+}
+.bicon-user:before {
+  content: "\e960";
+}
+.bicon-cutlery:before {
+  content: "\e961";
+}
+.bicon-cocktail:before {
+  content: "\e962";
+}
+.bicon-health:before {
+  content: "\e963";
+}
+.bicon-shop:before {
+  content: "\e964";
+}
+.bicon-car-1:before {
+  content: "\e965";
+}
+.bicon-skincare:before {
+  content: "\e966";
+}
+.bicon-tick:before {
+  content: "\e967";
+}
+.bicon-add-group:before {
+  content: "\e968";
+}
+.bicon-publish:before {
+  content: "\e969";
+}
+.bicon-trophy:before {
+  content: "\e96a";
+}
+.bicon-success:before {
+  content: "\e96b";
+}
+.bicon-employee:before {
+  content: "\e96c";
+}
+.bicon-rating-stars:before {
+  content: "\e96d";
+}
+.bicon-price-tag:before {
+  content: "\e96e";
+}
+.bicon-telephone:before {
+  content: "\e96f";
+}
+.bicon-list:before {
+  content: "\e970";
+}
+.bicon-booking:before {
+  content: "\e971";
+}
+.bicon-locations:before {
+  content: "\e972";
+}
+.bicon-cheer-up:before {
+  content: "\e973";
+}
+.bicon-planner:before {
+  content: "\e974";
+}
+.bicon-discount:before {
+  content: "\e975";
+}
+.bicon-shopping-cart-1:before {
+  content: "\e976";
+}
+.bicon-calendar-1:before {
+  content: "\e977";
+}
+.bicon-hall:before {
+  content: "\e978";
+}
+.bicon-beach-chair:before {
+  content: "\e979";
+}
+.bicon-fast-food-1:before {
+  content: "\e97a";
+}
+.bicon-spa:before {
+  content: "\e97b";
+}
+.bicon-window:before {
+  content: "\e97c";
+}
+.bicon-booking-1:before {
+  content: "\e97d";
+}
+.bicon-discount-1:before {
+  content: "\e97e";
+}
+.bicon-location-1:before {
+  content: "\e97f";
+}
+.bicon-traveller:before {
+  content: "\e980";
+}
+.bicon-right-arrow-2:before {
+  content: "\e981";
+}
+.bicon-verified:before {
+  content: "\e982";
+}
+.bicon-taxi-front-view:before {
+  content: "\e983";
+}
+.bicon-parking:before {
+  content: "\e984";
+}
+.bicon-swimming-pool:before {
+  content: "\e985";
+}
+.bicon-parking-1:before {
+  content: "\e986";
+}
+.bicon-wifi-router:before {
+  content: "\e987";
+}
+.bicon-breakfast:before {
+  content: "\e988";
+}
+.bicon-customer-support:before {
+  content: "\e989";
+}
+.bicon-quote-1:before {
+  content: "\e98a";
+}
+.bicon-sleep:before {
+  content: "\e98b";
+}
+.bicon-review-1:before {
+  content: "\e98c";
+}
+.bicon-booking-2:before {
+  content: "\e98d";
+}
+.bicon-hotel:before {
+  content: "\e98e";
+}
+.bicon-quality:before {
+  content: "\e98f";
+}
+.bicon-trusted:before {
+  content: "\e990";
+}
+.bicon-cost-saving:before {
+  content: "\e991";
+}
+.bicon-shower:before {
+  content: "\e992";
+}
+.bicon-guests:before {
+  content: "\e993";
+}
+.bicon-square-measument:before {
+  content: "\e994";
+}
+.bicon-tray:before {
+  content: "\e995";
+}
+.bicon-dish:before {
+  content: "\e996";
+}
+.bicon-restaurant:before {
+  content: "\e997";
+}
+.bicon-atm-machine:before {
+  content: "\e998";
+}
+.bicon-card:before {
+  content: "\e999";
+}
+.bicon-address-1:before {
+  content: "\e99a";
+}
+.bicon-calling:before {
+  content: "\e99b";
+}
+.bicon-email-1:before {
+  content: "\e99c";
+}
