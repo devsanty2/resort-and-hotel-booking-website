@@ -1,0 +1,1048 @@
+.elementor-editor-active {
+	.boliin-single-booking-form #booking_form .input_group .list_service .view-list-details{
+   	display: none!important;
+   }
+}  
+.boliin-gva_ba_item_gallery{
+	position: relative;
+	.btn-gallery-video{
+		bottom: 0;
+		right: calc((100% - 1200px) / 2);
+		//left: 50%;
+		//transform: translateX(-50%);
+		position: absolute;
+		z-index: 111;
+		padding: 6px 12px;
+		background: $bg-gray;
+		border-radius: 6px 6px 0 0;
+		.content-inner{
+			> div{
+				margin: 0 5px;
+				float: left;
+				a:nth-child(1){
+					color: $theme-color;
+					background: #EAE7E6;
+					width: 32px;
+					height: 32px;
+					border-radius: 50%;
+					z-index: 1;
+					text-align: center;
+					line-height: 33px;
+					font-size: 13px;
+					display: inline-block;
+					&:hover{
+						background: $theme-color;
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}
+
+.boliin-single-taxonomy, .boliin-single-price_from{
+	.content-inner{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		.icon i{
+			color: $theme-color;
+			width: 53px;
+			height: 53px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #faf5ef;
+		}
+		.box-content{
+			font-weight: 500;
+			.ba-meta-title{
+				font-size: 15px;
+				margin: 0 0 2px;
+				color: $body-color;
+				font-weight: 500;
+			}
+			.item-value{
+				color: $headings-color;
+				font-weight: 700; 
+			}
+		}
+	}
+}
+
+.booking-el-meta{
+	&__single{
+
+	}
+	&__wrap{
+		display: flex;
+		align-items: center;
+	}
+	&__icon{
+		flex: 0 0 54px;
+		width: 54px;
+		height: 54px;
+		background: $bg-gray;
+		color: $theme-color;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 24px; 
+	}
+	&__content{
+		flex: 0 0 calc(100% - 54px);
+		width: calc(100% - 54px);
+		padding-left: 10px;
+	}
+	&__title{
+		margin: 0;
+		font-size: 15px;
+		color: $body-color;
+		font-family: $font-family-base;
+		font-weight: 500;
+	}
+	&__value{
+		font-size: 15px;
+		color: $headings-color;
+		font-weight: 600;
+		line-height: 22px;
+	}
+}
+
+.boliin-single-price_from{
+	font-size: 16px;
+	.item_info_price_new{
+		font-size: 24px;
+		color: $theme-color;
+	}
+	.item_info_price_old{
+		color: $body-color;
+		font-size: 16px;
+		margin-left: 4px;
+		text-decoration: line-through;
+	}
+}
+
+.boliin-single-taxonomy.style-2{
+	.content-inner{
+		display: block;
+		.ba-meta-title{
+			padding-bottom: 5px;
+		}
+		.box-content{
+			.ba-meta-title{
+				font-size: 32px;
+				color: $headings-color;
+				margin-bottom: 16px;
+			}
+			.term-level-0{
+				width: 50%;
+				float: left;
+				margin-bottom: 20px;
+				.term-name{
+					color: $black;
+					font-size: 20px;
+					margin-bottom: 6px;
+				}
+				.child-terms{
+					padding-left: 20px;
+				}
+			}
+			.term-item{
+				width: 33.33%;
+				float: left;
+				line-height: 1.8;
+				margin-bottom: 12px;
+				font-size: 16px;
+				padding-right: 10px;
+				&:nth-of-type(3n+1){
+					clear: both;
+				}
+				i{
+					font-size: 28px;
+					color: $theme-color;
+					margin-right: 10px;
+					position: relative;
+					top: 6px;
+				}
+				@media(max-width: 1024.98px){
+					width: 50%;
+					&:nth-of-type(3n+1){
+						clear: none;
+					}
+					&:nth-of-type(2n+1){
+						clear: both;
+					}
+				}
+				@media(max-width: 480px){
+					width: 100%;
+					&:nth-of-type(2n+1){
+						clear: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.boliin-single-address{
+	font-size: 16px;
+	font-weight: 500;
+	i{
+		color: $theme-color;
+		position: relative;
+		top: 2px;
+		margin-right: 4px;
+	}
+}
+
+.boliin-single-in-ex{
+	font-size: 16px;
+	ul{
+		list-style: none;
+		padding: 0;
+		li{
+			position: relative;
+			line-height: 22px;
+			&:before{
+				font-family: "Font Awesome 5 Free";
+				font-weight: 900;
+				font-size: 14px;
+				top: 0;
+				left: 0;
+				z-index: 1;
+				display: inline;
+				content: '\f00c';
+				color: $theme-color;
+			}
+		}
+	}
+}
+
+.booking-el-highlights{
+	&__content-inner{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item{
+		flex: 0 0 50%;
+		max-width: 50%;
+		@media(max-width: 768px){
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+	&__item-title{
+		font-size: 20px;
+		margin: 0 0 10px;
+	}
+	&__item-content{
+		ul{
+			list-style: none;
+			padding: 0;
+			li{
+				position: relative;
+				padding-left: 25px;
+				margin-top: 15px;
+				margin-bottom: 5px;
+				line-height: 20px;
+				&:after{
+					content: '\f058';
+					position: absolute;
+					top: 0;
+					left: 0;
+					font-family: $font-icon-awesome;
+					font-weight: 900;
+					font-size: 14px;
+					color: $theme-color;
+				}
+			}
+		}
+	}
+}
+
+.boliin-single-rating{
+	.stars{
+		.star{
+			color: #FFA801;
+		}
+		.post-total-rating-value{
+			font-weight: 500;
+		}
+	}
+}
+
+.boliin-single-booking-form{
+	padding: 0 40px 40px;
+	@media(max-width: 1024px){
+		padding: 0 30px 30px;
+	}
+	@media(max-width: 992px){
+		padding: 0 18px 30px;
+	}
+	&.style-1{
+		background: #faf5ef;
+	}
+	&.style-2{
+		background: $white;
+		border-radius: 8px;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+		border: 1px solid rgba(0, 0, 0, 0.06);
+	}
+	.box-title{
+		font-size: 30px;
+		background: $theme-color;
+		color: $white;
+		padding: 20px 40px;
+		margin: 0 -40px 50px;
+		position: relative;
+		@media(max-width: 1024px){
+			margin: 0 -30px 50px;
+			font-size: 22px;
+			padding: 15px 30px;
+		}
+		@media(max-width: 992px){
+			margin: 0 -18px 50px;
+			padding: 15px 18px;
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 0;
+			display: block;
+			border-top: 20px solid $theme-color;
+			border-left: 40px solid transparent;
+			border-right: 40px solid transparent;
+		}
+	}
+	#booking_form{
+		.booking-form-block input[type="text"].booking_date{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.input_group{
+			.booking-form-block{
+				border: 0;
+				display: block;
+				> div{
+					display: block;
+				}
+				.booking_form_input_label{
+					color: $headings-color;
+					font-weight: 600;
+					font-size: 16px;
+				}
+				.input_select_field{
+					line-height: 24px;
+					margin-bottom: 15px;
+					.input_select_title_value{
+						padding: 0 10px 0 0;
+						width: 100%;
+						flex: 0 0 100%;
+						text-transform: uppercase;
+						font-size: 12px;
+						letter-spacing: 1px;
+						font-weight: 700;
+					}
+					.input_select_wrapper{
+						.input_select_input_value{
+							line-height: 36px!important;
+						}
+						i{
+							top: 16px;
+						}
+					}
+					.input_select_wrapper{
+						.input_select_list{
+							border: 1px solid rgba(0, 0, 0, 0.1);
+							box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+							> li{
+								padding: 5px 10px;
+							}
+						}
+					}
+				}
+				.booking-date{
+					justify-content: flex-end;
+					position: relative;
+					background: #fff;
+					display: block;
+					i{
+						color: $theme-color;
+						font-size: 15px;
+						top: 18px;
+						position: absolute;
+						right: 12px;
+					}
+					input{
+						border: none;
+						font-size: 14px;
+						width: 100%;
+						min-height: 50px;
+					}
+				}
+			}
+			.booking-services-block{
+				padding-bottom: 0;
+				.booking_form_input_label{
+					font-weight: 700;
+					margin-bottom: 10px;
+				}
+			}
+			.list_service{
+				border: 0;
+				padding-top: 0;
+				align-items: flex-start;
+				align-items: center;
+				.view-list-details{
+					overflow: visible;
+					max-width: 260px;
+					max-height: 1000px;
+					box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+					border-radius: 6px;
+					padding: 18px 18px 8px;
+					font-size: 15px;
+					line-height: 26px;
+					border: 1px solid $border-color;
+					z-index: 111;
+					top: -15px;
+					margin-right: 30px;
+					display: block!important;
+					visibility: hidden;
+					transition: all 0.3s;
+					opacity: 0;
+					&:before{
+						content: "";
+				    	position: absolute;
+				    	z-index: 11;
+				    	border-top: 1px solid $border-color;
+				    	border-right: 1px solid $border-color;
+				    	width: 12px;
+				    	height: 12px;
+				    	background: #fff;
+				    	display: inline-block;
+				    	transform: rotate(45deg);
+				    	right: -6px;
+				    	top: 18px;
+					} 
+					&:after{
+						content: "";
+						position: absolute;
+						width: 20px;
+						height: 100%;
+						left: 100%;
+						top: 0;
+						z-index: 11;
+					}
+				}
+				&:hover{
+					.view-list-details{
+						visibility: visible;
+						margin-right: 20px;
+						opacity: 1;
+					}
+				}
+				.list_service_prices{
+					font-size: 14px;
+					.service_price_line{
+						font-weight: 600;
+						padding: 0 5px;
+						label{
+							color: $body-color;
+						}
+						.currency_amount{
+							color: $black;
+						}
+					}
+				}
+			}
+
+			.list_service_title, .booking_time_line{
+				font-size: 0;
+				color: transparent;
+				line-height: 1.4;
+				input[type="checkbox"], input[type="radio"]{
+					position: relative;
+				}
+				> h4{
+					font-weight: 600;
+					font-size: 14px;
+					position: relative;
+					font-family: $font-family-base;
+				}
+				> label{
+					color: $black;
+					font-size: 14px;
+					font-weight: 500;
+					padding-left: 6px;
+					position: relative;
+					line-height: 22px;
+					font-size: 0;
+					input{
+						font-size: 14px;
+						display: inline-block!important;
+						margin-right: 8px;
+						position: relative;
+						top: 2px;
+					}
+					&:hover{
+						cursor: pointer;
+					}
+				}
+ 
+				input[type="radio"]{
+					& + label{
+						&:before, &:after{
+							border-radius: 50%;
+						}
+					}
+				}
+			}
+		}
+		#total_group{
+			margin-top: 20px;
+			padding-top: 20px;
+			border-top: 1px solid $border-color;
+			label{
+				color: $theme-color-2;
+				font-size: 16px;
+				font-weight: 600;
+			}
+			#booking_form_total{
+				.currency_amount{
+					font-size: 16px;
+					font-weight: 700; 
+					color: $theme-color;
+				}
+			}
+		}
+		.submit_group{
+			margin: 10px 0 0;
+			.booking_form_submit{
+				border: none;
+				margin: 0;
+				width: 100%;
+				&:hover{
+					box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+				}
+			}
+		}
+	}
+	.box-external-link{
+		margin-top: 20px;
+		text-align: center;
+		a{
+			width: 100%;
+			i{
+				margin-right: 6px;
+			}
+		}
+	}
+}
+.boliin-single-calendar{
+	.title{
+		font-size: 32px;
+	}
+}
+
+.boliin-single-rating-criteria{
+	.box-content{
+		display: flex;
+		border: 1px solid $border-color;
+		border-radius: 0px;
+		align-items: center;
+		justify-content: center;
+	   @media(max-width: 560px){
+	   	display: block;
+	   }
+		.rating-value{
+			-webkit-box-flex: 0;
+		   flex: 0 0 35%;
+		   max-width: 35%;
+		   padding: 50px;
+		   text-align: center;
+		   @media(max-width: 1024px){
+		   	padding: 30px 15px;
+		   }
+		   @media(max-width: 560px){
+		   	width: 100%;
+		   	max-width: 100%;
+		   	border-bottom: 1px solid $border-color;
+		   }
+		   .rating-score{
+		   	font-size: 80px;
+		   	color: $black;
+		   	@media(max-width: 1024px){
+		   		font-size: 60px;
+		   	}
+		   	@media(max-width: 678px){
+		   		font-size: 50px;
+		   	}
+		   	span{
+		   		font-size: 22px;
+		   		color: $body-color;
+		   	}
+		   }
+		   .vote-text{
+		   	font-size: 20px;
+		   	font-weight: 500;
+		   	color: $theme-color;
+		   }
+		   .vote-number{
+		   	line-height: 22px;
+		   }
+		}
+		.all-review-progress{
+			-webkit-box-flex: 0;
+		   flex: 0 0 65%;
+		   max-width: 65%;
+		   border-left: 1px solid $border-color;
+		   padding: 40px 50px 50px;
+		   @media(max-width: 768px){
+		   	padding: 30px 20px;
+		   }
+		   @media(max-width: 560px){
+		   	width: 100%;
+		   	max-width: 100%;
+		   	border-left: 0;
+		   }
+		   .review-progress{
+		   	margin-bottom: 16px;
+	   		&:last-child{
+	   			margin-bottom: 0;
+	   		}
+		   	.progress-meta{
+		   		display: flex;
+		   		justify-content: space-between;
+		   		font-size: 16px;
+		   		font-weight: 500;
+		   		line-height: 30px;
+		   		.item-title{
+		   			color: $black;
+		   		}
+		   		.item-value{
+		   			font-size: 15px;
+		   			letter-spacing: 0.5px;
+		   		}
+		   	}
+		   	.progress{
+		   		height: 8px;
+		   		background: $bg-gray;
+		   		border-radius: 6px;
+		   		.progress-bar{
+		   			background-color: $theme-color;
+		   			border-radius: 6px;
+		   		}
+		   	}
+		   }
+		}
+
+	}
+}
+
+
+//Comment
+.comment-total-rating-stars{
+	display: none!important;
+}
+.boliin-single-comment{
+	.the-comment{
+		.comment-rating-ul{
+			display: flex;
+			flex-wrap: wrap;
+			margin: 10px 0 10px;
+			> li{
+				margin-right: 30px;
+				margin-bottom: 10px;
+				&:last-child{
+					margin-right: 0;
+				}
+				> span{
+					display: block;
+					font-size: 15px;
+					font-weight: 500;
+					line-height: 24px;
+					&.comment-rating-stars{
+						font-size: 12px;
+						letter-spacing: -2px;
+					}
+				}
+			}
+		}
+	}
+	form.comment-form{
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+		> div, > p, > ul{
+		   flex: 0 0 100%;
+		   max-width: 100%;
+		   padding: 0 15px;
+		   order: 20;
+		}
+		.comment-form-rating{
+			display: none;
+		}
+		.logged-in-as{
+			order: 1;
+		}
+		.h-info{
+			order: 1;
+		}
+		.comment-form-rating-ul{
+			order: 2;
+			display: flex;
+			flex-wrap: wrap;
+			width: calc(100% - 210px);
+			flex: 0 0 calc(100% - 210px);
+			max-width: calc(100% - 210px);
+			> li{
+				margin-right: 30px;
+				margin-bottom: 20px;
+				min-width: 150px;
+				@media(max-width: 1024px){
+					min-width: 95px;
+				}
+				&:last-child{
+					margin-right: 0;
+				}
+				> span{
+					display: block;
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 24px;
+					&.comment-form-rating-stars{
+						letter-spacing: -2px;
+						.star{
+							padding: 0;
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+		.avg-review{
+			order: 3;
+			width: 210px;
+		   flex: 0 0 210px;
+			max-width: 210px;
+			.content-inner{
+				background: $bg-gray;
+				text-align: center;
+				min-height: 120px;
+				padding: 30px 0 30px;
+				margin-bottom: 30px;
+				> span{
+					display: block;
+				}
+				.value{
+					font-size: 30px;
+					font-weight: 700;
+					color: $rating-color;
+				}
+				.avg-title{
+					font-size: 16px;
+				}
+			}
+		}
+		.cm-your-name, .cm-your-email{
+			order: 4;
+		   flex: 0 0 50%;
+		   max-width: 50%;
+		   padding: 0 15px;
+		}
+		.cm-your-email{
+			order: 5;
+		}
+		.comment-form-cookies-consent{
+			order: 21;
+			margin: 18px 0 0;
+		}
+		.form-submit{
+			order: 22;
+		}
+	}
+}
+
+.booking-el-rules{
+	&__item{
+		margin-top: 36px;
+	}
+	&__item-title{
+		margin: 0 0 16px;
+		font-size: 20px;
+	}
+}
+
+.boliin-single-address-map{
+	#block_address_map_with_direction{
+		border-radius: 0;
+		overflow: hidden;
+		> h3{
+			display: none; 
+		}
+	}
+	.title{
+		font-size: 32px;
+	}
+}
+
+.boliin-single-calendar{
+	.box-content{
+
+	}
+}
+
+.cal-month-block{
+	.cal-month-bar{
+		background: $theme-color-2;
+		border-color: $theme-color-2;
+	}
+	.cal-week-name{
+		margin: 0;
+    	text-align: center;
+    	width: 100%;
+    	font-weight: 500;
+    	border-radius: 0;
+    	border: 0;
+    	padding: 9px 2px;
+    	line-height: 24px;
+    	color: $black;
+    	background-color: $bg-gray;
+	}
+	.cal-dates-block{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 2px;
+		border-top: 1px solid $border-color;
+	}
+	.cal-cell{
+		position: relative;
+		flex-basis: 14.2857%;
+		text-align: right;
+		border: 1px solid $border-color;
+		border-right: 0;
+		border-top: 0;
+		padding: 10px 15px;
+		box-sizing: border-box;
+		min-height: 55px;
+		@media(max-width: 900px){
+			padding: 10px 5px;
+		}
+		&:nth-child(7n){
+			border-right: 1px solid $border-color;
+		}
+		&.cal-cell-empty, &.cal-cell-disabled{
+			background: #faf5ef;
+		}
+		&.cal-cell-invisible{
+			display: none;
+		}
+		&.cal-cell-active{
+			transition: all 0.35s;
+			&:hover{
+				background: #313041;
+				box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+				.cal-cell-date{
+					color: $white;
+				}
+			}
+		}
+		.cal-cell-date{
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 24px;
+			color: $body-color;
+		}
+		.cal-cell-pricefrom{
+			font-size: 14px;
+			padding-top: 8px;
+			font-weight: 600;
+			color: $theme-color;
+			@media(max-width: 900px){
+				font-size: 11px;
+			}
+			.currency_amount{
+				color: $theme-color;
+			}
+		}
+
+	}
+}
+.cal-cell.cal-cell-active.cal-cell-selected, .cal-cell.cal-cell-disabled-first.cal-cell-selected{
+	background: #504e64;
+}
+.view-rate-details{
+	font-size: 16px!important;
+	padding: 20px!important;
+	border-radius: 6px;
+	border: 1px solid rgba(0, 0, 0, 0.08)!important;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+	top: 100%;
+	margin-top: -1px;
+	width: 280px;
+	h4{
+		font-size: 20px;
+		margin: 0;
+	}
+	.rate_price_general{
+		font-size: 18px;
+		color: $theme-color;
+		> span{
+			font-size: 14px;
+			line-height: 22px;
+			display: inline;
+			text-decoration: none;
+			color: $body-color;
+			&.rate_details_label{
+				display: block;
+				color: $black;
+				font-weight: 500;
+				font-size: 16px;
+			}
+			&.price_age_title{
+				position: relative;
+				&:after{
+					content: ':';
+					padding-left: 1px;
+					font-weight: 500;
+				}
+			}
+			&.price_age_value{
+				margin-left: 1px;
+			}
+		}
+	}
+}
+
+.boliin-ba-single-gallery{
+	position: relative;
+	.swiper-nav-next{
+		right: 10px!important;
+	}
+	.swiper-nav-prev{
+		left: 10px!important;
+	}
+	.ba-media{
+      font-size: 16px;
+      line-height: 1;
+      background: rgba(0, 0, 0, 0.5);
+      a{
+         color: $white;
+         margin-left: 12px;
+         i{
+            font-size: 23px;
+         }
+         &.ba-gallery{
+            margin-left: 0;
+            position: relative;
+            span{
+               display: inline-block;
+               background: $theme-color;
+               color: $white;
+               width: 14px;
+               height: 14px;
+               border-radius: 50%;
+               line-height: 1;
+               font-size: 11px;
+               line-height: 14px;
+               position: absolute;
+               text-align: center;
+               right: -4px;
+               top: -6px;
+            }
+         }
+         &:hover{
+            color: $theme-color;
+         }
+      }
+   }
+   &.style-1{
+   	.ba-media{
+	   	position: absolute;
+			right: 0;
+			bottom: 0;
+			z-index: 11;
+			padding: 10px 20px;
+		}
+   }
+	&.style-2{
+		overflow: hidden;
+		border-radius: 8px;
+		.ba-media{
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			z-index: 11;
+			padding: 10px 20px;
+		}
+	}
+}
+
+.wishlist-btn__single{
+   .ajax-wishlist-link{
+   	position: relative;
+   	background: $bg-gray;
+	  	color: $body-color;
+	  	font-size: 12px;
+	  	font-weight: 500;
+	  	text-transform: uppercase;
+	  	letter-spacing: 1px;
+	  	padding: 5px 18px;
+	  	border-radius: 30px;
+	 	display: inline-block;
+	 	width: auto;
+	 	height: auto;
+	 	top: 0;
+	 	left: 0;
+	 	font-weight: 600;
+	  	i{
+	    	margin-right: 5px;
+	  	}
+	  	&:hover{
+	  		background: $theme-color;
+	  		color: $white;
+	  		opacity: 0.8;
+	  	}
+	}
+   .wishlist-added{
+      color: $white;
+      background: $theme-color!important;
+      opacity: 1!important;
+   }
+   .ajax-preload{
+      opacity: 0.68;
+   }
+}
+
+.ba-content__one{
+	ul{
+		list-style: none;
+		padding: 15px 0 0;
+		li{
+			font-weight: 500;
+			padding: 8px 0;
+			padding-left: 30px;
+			font-size: 17px;
+			position: relative;
+			&:after{
+				content: '\f058';
+				font-family: 'Line Awesome Free';
+				font-weight: 900;
+				color: $theme-color;
+				position: absolute;
+				top: 10px;
+				left: 0;
+				z-index: 11;
+				line-height: 1;
+				font-size: 18px;
+			}
+		}
+	} 
+}
+
