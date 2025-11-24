@@ -1,0 +1,181 @@
+.wpcf7-form{
+	max-width: 950px;
+	margin: 0 auto;
+	.row{
+		margin: 0 -10px;
+		> div{
+			padding: 0 10px;
+		}
+	}
+	.wpcf7-form-control-wrap{
+		margin-bottom: 10px;
+		display: block;
+	} 
+	label{
+		display: inline-block;
+		font-weight: 500;
+		color: $black;
+		margin-bottom: 5px;
+	}
+	input[type*="email"], input[type*="text"], input[type*="tel"]{
+		width: 100%;
+		height: 60px;
+		padding: 0 15px;
+		border: 1px solid $bg-input-gray!important;
+		transition: all 0.35s;
+		background: $bg-input-gray;
+		
+		&:focus, &:active{
+			border-color: $theme-color!important;
+		}
+	}
+	select{ 
+		border: 1px solid $bg-input-gray!important;
+		line-height: 60px;
+		height: 60px;
+		width: 100%;
+		color: $body-color;
+		&:focus, &:active{
+			border-color: $theme-color!important;
+		}
+	}
+	textarea{
+		width: 100%;
+		padding: 10px 20px;
+		max-height: 180px;
+		border: none!important;
+		border: 1px solid $bg-input-gray!important;
+		background: $bg-input-gray;
+		&::-webkit-input-placeholder { 
+		  color: $body-color;
+		}
+		&::-moz-placeholder {
+		  color: $body-color;
+		}
+		&:-ms-input-placeholder { 
+		  color: $body-color;
+		}
+		&:-moz-placeholder { 
+		  color: $body-color;
+		}
+		&:focus, &:active{
+			background: $bg-input-gray;
+			border-color: $theme-color!important;
+		}
+		&.size-medium{
+			max-height: 135px;
+		}
+	}
+	input, select, textarea{
+		&::-webkit-input-placeholder { 
+		  color: $body-color;
+		  font-weight: 500;
+		}
+		&::-moz-placeholder {
+		  color: $body-color;
+		  font-weight: 500;
+		}
+		&:-ms-input-placeholder { 
+		  color: $body-color;
+		  font-weight: 500;
+		}
+		&:-moz-placeholder { 
+		  color: $body-color;
+		  font-weight: 500;
+		}
+	}
+	.form-action{
+		text-align: center;
+		padding: 0;
+		position: relative;
+		.ajax-loader{
+		  position: absolute;
+		  right: 0;
+		  top: 50%;
+		  margin-top: -8px;
+		}
+	}
+	.wpcf7-submit{
+		padding: 16px 50px 16px 50px;
+	}
+}
+
+
+.newsletter{
+	&__form{
+	  	position: relative;
+	  	max-width: 800px;
+	  	overflow: hidden;
+  	}
+  	&__content{
+  		position: relative;
+  		display: flex;
+  		flex-wrap: wrap;
+	  	input[type="email"]{
+		 	text-align: left;
+		 	flex: 0 0 calc(100% - 50px);
+		 	width: calc(100% - 50px);
+		 	height: 58px;
+		 	line-height: 1;
+		 	padding: 0 18px;
+		 	padding-left: 30px;
+		 	transition: all 0.35s;
+		 	font-size: 16px;
+		 	color: #a09faf;
+		 	background: #1e1d28;
+		 	border: none;
+		 	border-radius: 0;
+		 	@media(max-width: 500px){
+		 		width: 100%;
+		 		margin-right: 0;
+		 	}
+		 	&::-webkit-input-placeholder { 
+			  color: #a09faf;
+			  font-size: 14px;
+    			font-weight: 500;
+			}
+			&::-moz-placeholder {
+			  color: #a09faf;
+			  font-size: 14px;
+    			font-weight: 500;
+			}
+			&:-ms-input-placeholder { 
+			  color: #a09faf;
+			  font-size: 14px;
+    			font-weight: 500;
+			}
+			&:-moz-placeholder { 
+			  color: #a09faf;
+			  font-size: 14px;
+    			font-weight: 500;
+			}
+	  	}
+	}
+	&__action{  	
+		flex: 0 0 50px;
+		width: 50px;
+		background: #1e1d28;
+		text-align: center;
+		position: relative;
+		color: $theme-color;
+		height: 58px;
+		transition: all 0.35s;
+		i{
+			position: relative;
+			z-index: 11;
+			top: 15px;
+		}
+	}
+	&__submit{
+		position: absolute!important;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		right: 0;
+		z-index: 11;
+		opacity: 0!important;
+		font-size: 0!important;
+		color: transparent!important;
+		padding: 0!important;
+ 	}
+}

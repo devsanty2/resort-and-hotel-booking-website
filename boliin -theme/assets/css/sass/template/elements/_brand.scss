@@ -1,0 +1,72 @@
+.gva-brand-carousel{
+	.brand-item-content{
+		text-align: center;
+		transition: all 0.35s;
+		display: block;
+		width: 100%;
+		.brand-item-image{
+			position: relative;
+			text-align: center;
+			min-height: 83px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+			width: 100%;
+			transition: all 0.5s;
+			background: none;
+			img{
+				opacity: 0.3;
+				transition: all 0.35s;
+				display: inline-block;
+			}
+			&:hover{
+				img{
+					opacity: 1;
+					animation: beat 1.5s ease 0s infinite;
+				}
+			}
+		}
+	}
+	&.style-1{
+		.brand-item-content{ 
+			.brand-item-image{
+				&:hover{
+					background: #faf5ef;
+				}
+			}
+		}
+	}
+	&.style-2{
+		.brand-item-content{ 
+			.brand-item-image{
+				&:hover{
+					background: $white;
+				}
+			}
+		}
+	}
+}  
+
+.item-active.center{
+	.brand-item-image{
+		img{
+			opacity: 1;
+			animation: beat 1.5s ease 0s infinite;
+		}
+	}
+}
+.gva-brand-carousel.style-1{
+	.item-active.center{
+		.brand-item-image{
+			background: #faf5ef;
+		}
+	}
+}
+.gva-brand-carousel.style-2{
+	.item-active.center{
+		.brand-item-image{
+			background: $white;
+		}
+	}
+}

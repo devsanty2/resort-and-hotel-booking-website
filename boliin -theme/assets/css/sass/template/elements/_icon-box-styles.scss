@@ -1,0 +1,340 @@
+.gsc-icon-box-styles{
+	&.style-1{
+		position: relative;
+		@include clearfix();
+		text-align: left;
+		margin-bottom: 30px;
+		.icon-box-content{
+			background: $theme-color;
+			padding: 40px 30px 35px;
+			border-radius: 8px;
+			@media(max-width: 1024px){
+				padding: 30px 15px 25px;
+			}
+			.icon-inner{
+				text-align: right;
+				margin-bottom: 30px;
+				@media(max-width: 1024px){
+					margin-bottom: 25px;
+				}
+				i{
+					color: $white;
+					font-size: 72px;
+				}
+				svg{
+					fill: $white;
+					width: 72px;
+					height: auto;
+				}
+			}
+			&:hover, &.active{
+				.icon-inner{
+					svg, i{ 
+						animation: beat 1.5s ease 0s infinite;
+					}
+				}
+			}
+		}
+
+		.box-content{
+			.title{
+				color: $white;
+				font-size: 20px;
+				line-height: 28px;
+				margin: 0 0 10px;
+				display: block;
+				transition: all 0.35s;
+			}
+			.desc{
+				font-weight: 500;
+				line-height: 22px;
+				font-size: 15px;
+				color: rgba(255, 255, 255, 0.8);
+			}
+		}
+		.link-overlay{
+			@include size(100%, 100%);
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		} 
+		&:hover, &.active{
+			.icon-inner{
+				svg, i{ 
+					animation: beat 1.5s ease 0s infinite;
+				}
+			}
+		}
+	}
+}
+// Style 01
+.icon-style-one{
+	&__single{
+		position: relative;
+	}
+	&__wrap{
+		display: flex;
+		align-items: center;
+	}
+	&__icon{
+		margin-right: 56px;
+		flex: 0 0 83px;
+		width: 83px;
+  		height: 83px;
+  		display: flex;
+  		align-items: center;
+  		justify-content: center;
+  		border-radius: 50%;
+  		box-shadow: 0px 5px 30px 0 rgba(0, 0, 0, 0.07);
+  		background: $white;
+  		color: $theme-color;
+  		font-size: 32px;
+  		@media (max-width: 1199px){
+  			margin-right: 35px;
+  		}
+  		@media (max-width: 1024px){
+  			margin-right: 25px;
+  		}
+		svg{
+			fill: $theme-color;
+		}
+		position: relative;
+		&:before{
+			top: 0;
+			right: -8px;
+			position: absolute;
+			font-size: 26px;
+			color: $theme-color;
+			content: "\e982";
+			font-family: $font-icon-theme;
+			font-style: normal;
+		    font-weight: normal;
+		    font-variant: normal;
+		    text-transform: none;
+		    line-height: 1;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
+		}
+	}
+	&__title{
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 26px;
+		margin: 0;
+		display: block;
+		transition: all 0.35s;
+	}
+	&__desc{
+		font-weight: 500;
+		line-height: 30px;
+		font-size: 16px;
+	}
+	&__link{
+		@include size(100%, 100%);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	} 
+	&__single{
+		&:hover, &.active{
+			.icon-style-one{
+				&__icon{
+					svg, i{ 
+						animation: beat 1.5s ease 0s infinite;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Style 02
+.icon-style-two{
+	&__single{
+	 	position: relative;
+	 	background: $theme-color;
+	 	&:before{
+	 		content: "";
+	 		z-index: 10;
+	 		position: absolute;
+	 		top: 100%;
+	 		right: 0;
+	 		border-bottom: 30px solid transparent ;
+	 		border-left: 30px solid transparent;
+	 		border-right: 35px solid $theme-color;
+	 		display: block;
+	 	}
+	}
+	&__wrap{
+		display: flex;
+		align-items: center;
+	}
+	&__icon{
+		display: inline-block;
+		transition: all 0.35s;
+		position: relative;
+		z-index: 11;
+		color: $white;
+		font-size: 64px;
+	}
+	&__title{
+		font-size: 18px;
+		font-weight: 600;
+		display: block;
+		margin: 0;
+		color: $white;
+		transition: all 0.35s;
+	}
+		
+	&__link-overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include size(100%, 100%);
+		z-index: 11; 
+	}
+	&__single{
+		&:hover, &.active{
+			.icon-style-two{
+				&__icon{
+					animation: beat 1.5s ease 0s infinite;
+				}
+			}
+		}
+	}
+}
+// Style 03
+.icon-style-three{
+	&__single{
+		position: relative;
+		max-width: 248px;
+		padding-bottom: 25px;
+		margin-bottom: 30px;
+		border-bottom: 1px solid #ebe7de;
+	}
+	&__wrap{
+		display: flex;
+		align-items: center;
+	}
+	&__icon{
+		margin-right: 10px;
+		flex: 0 0 38px;
+  		color: $theme-color;
+  		font-size: 38px;
+		svg{
+			width: 38px;
+			fill: $theme-color;
+		}
+	}
+	&__title{
+		font-size: 14px;
+		font-weight: 500;
+		letter-spacing: 1.4px;
+		text-transform: uppercase;
+		color: $body-color;
+		line-height: 26px;
+		margin: 0;
+		display: block;
+		transition: all 0.35s;
+	}
+	&__desc{
+		margin-top: 20px;
+		font-weight: 600;
+		line-height: 1.67;
+		font-size: 18px;
+		color: $headings-color;
+		font-family: $font-second;
+	}
+	&__link{
+		@include size(100%, 100%);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	} 
+	&__single{
+		&:hover, &.active{
+			.icon-style-three{
+				&__icon{
+					svg, i{ 
+						animation: beat 1.5s ease 0s infinite;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Style 04
+.icon-style-four{
+	&__single{
+		position: relative;
+		max-width: 425px;
+	}
+	&__wrap{
+		
+	}
+	&__icon{
+		width: 127px;
+		height: 127px;
+		background: $theme-color-2;
+  		color: $white;
+  		font-size: 67px;
+  		border-radius: 50%;
+  		display: flex;
+  		align-items: center;
+  		justify-content: center;
+		svg{
+			width: 67px;
+			fill: $white;
+		}
+		@media (max-width: 1024px){
+			width: 90px;
+			height: 90px;
+			font-size: 45px;
+			svg{
+				width: 45px;
+			}
+		}
+	}
+	&__title{
+		font-size: 16px;
+		font-weight: 500;
+		font-family: $font-family-base;
+		color: $theme-color;
+		line-height: 26px;
+		margin: 25px 0 0;
+		display: block;
+	}
+	&__desc{
+		margin-top: 20px;
+		font-weight: 400;
+		line-height: normal;
+		font-size: 30px;
+		color: $headings-color;
+		font-family: $font-second;
+	}
+	&__readmore{
+		margin-top: 30px;
+	}
+	&__link{
+		@include size(100%, 100%);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	} 
+	&__single{
+		&:hover, &.active{
+			.icon-style-four{
+				&__icon{
+					svg, i{ 
+						animation: beat 1.5s ease 0s infinite;
+					}
+				}
+			}
+		}
+	}
+}

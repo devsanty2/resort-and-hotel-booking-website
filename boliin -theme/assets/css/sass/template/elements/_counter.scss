@@ -1,0 +1,284 @@
+.milestone-one{
+	&__single{
+		position: relative;
+	}
+	&__top{
+		display: flex;
+		align-items: center;
+	}
+	&__icon{
+		margin-right: 28px;
+		font-size: 60px;
+		line-height: 1;
+		i{
+			color: $theme-color;
+		}
+		svg{
+			fill: $theme-color;
+		}
+		@media (max-width: 1024px){
+			font-size: 50px;
+			margin-right: 20px;
+		}
+	}
+	&__number{
+		line-height: 1;
+		font-size: 40px;
+		font-weight: 400;
+		color: $headings-color;
+		font-family: $font-second;
+		margin: 0;
+		display: flex;
+		@media (max-width: 1024px){
+			font-size: 32px;
+		}
+		.symbol{
+			&.after{
+				
+			}
+			&.before{
+				
+			}
+		}
+	}
+	&__title{
+		color: $body-color;
+		position: relative;
+		font-size: 20px;
+		font-weight: 500;
+		transition: all 0.5s;
+		line-height: 22px;
+		margin: 20px 0 0;
+		@media (max-width: 1024px){
+			font-size: 18px;
+		}
+	}
+	&__link{
+		position: absolute;
+		@include size(100%, 100%);
+		top: 0;
+		left: 0;
+		z-index: 11;
+	}
+	&__single{
+		&:hover{
+			.milestone-one__icon{
+				.icon{
+					svg, i{
+						animation: beat 1.5s ease 0s infinite;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Style 02
+.milestone-two{
+	&__single{
+		position: relative;
+		margin-bottom: 30px;
+		display: flex;
+		align-items: center;
+	}
+	&__icon{
+		color: $theme-color;
+		font-size: 56px;
+		line-height: 1;
+		margin-right: 20px;
+		flex: 0 0 56px
+	}
+	&__number{
+		font-size: 40px;
+		font-weight: 400;
+		color: $headings-color;
+		font-family: $font-second;
+	}
+	&__content{
+		text-align: left;
+	}
+	&__title{
+		color: $body-color;
+		font-size: 20px;
+		font-weight: 500;
+		margin-top: 12px;
+		transition: all 0.5s;
+	}
+	&__link{
+		position: absolute;
+		@include size(100%, 100%);
+		top: 0;
+		left: 0;
+		z-index: 11;
+	}
+	&__single{
+		&:hover{
+			.milestone-two__icon{
+				svg, i{
+					animation: beat 1.5s ease 0s infinite;
+				}
+			}
+		}
+	}
+}
+
+// Style 03
+.milestone-three{
+	&__single{
+		position: relative;
+		max-width: 229px;
+		background: #faf5ef;
+		padding: 15px;
+	}
+	&__content{
+		display: flex;
+		align-items: center;
+		padding: 18px 25px;
+		border: 2px solid $theme-color;
+	}
+	&__icon{
+		width: 138px;
+		height: 138px;
+		border-radius: 50%;
+		color: $theme-color;
+		font-size: 68px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		position: relative;
+		z-index: 11;
+		@media(max-width: 1024px){
+			width: 80px;
+			height: 80px;
+			font-size: 45px;
+		}
+		&:before, &:after{
+			content: '';
+			width: 100%;
+			height: 100%;
+			background: $theme-color;
+			position: absolute;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			border-radius: 50%;
+			transition: all 0.5s;
+		}
+		&:before{
+			opacity: 0.1;
+			z-index: -2;
+		}
+		&:after{
+			opacity: 0;
+			z-index: -1;
+			transform: scale(1.2);
+		}
+	}
+	&__number{
+		display: block;
+		font-size: 50px;
+		line-height: 1;
+		margin-right: 20px;
+		font-family: $font-second;
+		color: $headings-color;
+		@media(max-width: 1200px){
+			font-size: 36px;
+		}
+		@media(max-width: 1024px){
+			font-size: 30px;
+		}
+		.symbol{
+			
+		}
+	}
+	&__title{
+		position: relative;
+		display: inline-block;
+		font-size: 15px;
+		line-height: 1.33;
+		font-weight: 500;
+		margin: 0;
+		color: $body-color;
+		transition: all 0.5s;
+	}
+	&__link{
+		position: absolute;
+		@include size(100%, 100%);
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+	&__single{
+		&:hover{
+			.milestone-three__icon{
+				&:before{
+					opacity: 0;
+				}
+				&:after{
+					transform: scale(1);
+					opacity: 1;
+				}
+				svg, i{
+					animation: beat 1.5s ease 0s infinite;
+					color: $white;
+					fill: $white;
+				}
+			}
+		}
+	}
+}
+// Style 04
+.milestone-four{
+	&__single{
+		position: relative;		
+		display: flex;
+		align-items: center;
+	}
+	&__icon{
+		background: $theme-color;
+		color: $white;
+		font-size: 50px;
+		line-height: 1;
+		margin-right: 20px;
+		flex: 0 0 90px;
+		border-radius: 50%;
+		width: 90px;
+		height: 90px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__number{
+		font-size: 40px;
+		font-weight: 400;
+		color: $headings-color;
+		font-family: $font-second;
+	}
+	&__content{
+		text-align: left;
+	}
+	&__title{
+		color: $body-color;
+		font-size: 20px;
+		font-weight: 500;
+		margin-top: 10px;
+		transition: all 0.5s;
+	}
+	&__link{
+		position: absolute;
+		@include size(100%, 100%);
+		top: 0;
+		left: 0;
+		z-index: 11;
+	}
+	&__single{
+		&:hover{
+			.milestone-four__icon{
+				svg, i{
+					animation: beat 1.5s ease 0s infinite;
+				}
+			}
+		}
+	}
+}
